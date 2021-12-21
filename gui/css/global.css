@@ -1,0 +1,86 @@
+:root {
+    --dark-blue: #0D47A1;
+    --blue: #4285F4;
+    --indigo: #283593;
+    --purple: #4527A0;
+    --pink: #E91E63;
+    --pure-red: #ff0000;
+    --red: #DB4437;
+    --dark-red: #B71C1C;
+    --orange: #FB8C00;
+    --yellow: #F4B400;
+    --light-yellow: #FFEB3B;
+    --green: #0F9D58;
+    --teal: #009688;
+    --cyan: #00ACC1;
+    --white: #FFFFFF;
+    --light: #F8F9FA;
+    --light-gray: #BCBCBC;
+    --gray: #757575;
+    --gray-dark: #323232;
+    --almost-black: #212121;
+    --black: #000000;
+    --bluish-gray: #CFD8DC;
+    --primary: #007BFF;
+    --secondary: #9E9E9E;
+    --success: #28A745;
+    --info: #17A2B8;
+    --warning: #FFC107;
+    --danger: #DC3545;
+    --dark: #212121;
+    --d-blue: #64B5F6;
+    --d-indigo: #7986CB;
+    --d-purple: #9575CD;
+    --d-pink: #F06292;
+    --d-red: #E57373;
+    --d-orange: #FFB74D;
+    --d-yellow: #FFD54F;
+    --d-green: #81C784;
+    --d-teal: #80CBC4;
+    --d-cyan: #4DD0E1;
+}
+
+* {
+    user-select: none;
+    background-color: var(--almost-black);
+    color: var(--light);
+}
+
+body {
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-variant: small-caps;
+}
+
+.btn:focus, .btn:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.bootstrap-select .btn {
+    background-color: var(--almost-black) !important;
+    border-color: var(--gray-dark) !important;
+}
+
+.bootstrap-select .dropdown-menu,
+.bootstrap-select .dropdown-menu .dropdown-item,
+.bootstrap-select .dropdown-menu .dropdown-item span {
+    background-color: var(--gray-dark);
+}
+
+.bootstrap-select .dropdown-menu .selected,
+.bootstrap-select .dropdown-menu .selected span {
+    background-color: var(--primary);
+}
+
+.bootstrap-select .dropdown-menu .dropdown-item:hover,
+.bootstrap-select .dropdown-menu .dropdown-item:hover span {
+    background-color: var(--blue);
+}
