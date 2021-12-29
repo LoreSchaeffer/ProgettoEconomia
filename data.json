@@ -1,0 +1,1140 @@
+{
+  "buy": [
+    {
+      "manufacturer": "AGANDO",
+      "storage": "200",
+      "ram": "3",
+      "cores": "2",
+      "price": 740
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "200",
+      "ram": "3",
+      "cores": "4",
+      "price": 990
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "200",
+      "ram": "3",
+      "cores": "6",
+      "price": 1315
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "200",
+      "ram": "6",
+      "cores": "2",
+      "price": 825
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "200",
+      "ram": "6",
+      "cores": "4",
+      "price": 1095
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "200",
+      "ram": "6",
+      "cores": "6",
+      "price": 1460
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "200",
+      "ram": "12",
+      "cores": "2",
+      "price": 1012
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "200",
+      "ram": "12",
+      "cores": "4",
+      "price": 1215
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "200",
+      "ram": "12",
+      "cores": "6",
+      "price": 1620
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "250",
+      "ram": "3",
+      "cores": "2",
+      "price": 820
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "250",
+      "ram": "3",
+      "cores": "4",
+      "price": 1100
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "250",
+      "ram": "3",
+      "cores": "6",
+      "price": 1460
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "250",
+      "ram": "6",
+      "cores": "2",
+      "price": 915
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "250",
+      "ram": "6",
+      "cores": "4",
+      "price": 1215
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "250",
+      "ram": "6",
+      "cores": "6",
+      "price": 1620
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "250",
+      "ram": "12",
+      "cores": "2",
+      "price": 1125
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "250",
+      "ram": "12",
+      "cores": "4",
+      "price": 1350
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "250",
+      "ram": "12",
+      "cores": "6",
+      "price": 1800
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "300",
+      "ram": "3",
+      "cores": "2",
+      "price": 910
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "300",
+      "ram": "3",
+      "cores": "4",
+      "price": 1215
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "300",
+      "ram": "3",
+      "cores": "6",
+      "price": 1620
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "300",
+      "ram": "6",
+      "cores": "2",
+      "price": 1015
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "300",
+      "ram": "6",
+      "cores": "4",
+      "price": 1350
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "300",
+      "ram": "6",
+      "cores": "6",
+      "price": 1800
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "300",
+      "ram": "12",
+      "cores": "2",
+      "price": 1250
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "300",
+      "ram": "12",
+      "cores": "4",
+      "price": 1500
+    },
+    {
+      "manufacturer": "AGANDO",
+      "storage": "300",
+      "ram": "12",
+      "cores": "6",
+      "price": 2000
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "200",
+      "ram": "3",
+      "cores": "2",
+      "price": 910.2
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "200",
+      "ram": "3",
+      "cores": "4",
+      "price": 1217.7
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "200",
+      "ram": "3",
+      "cores": "6",
+      "price": 1617.45
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "200",
+      "ram": "6",
+      "cores": "2",
+      "price": 1014.75
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "200",
+      "ram": "6",
+      "cores": "4",
+      "price": 1346.85
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "200",
+      "ram": "6",
+      "cores": "6",
+      "price": 1795.8
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "200",
+      "ram": "12",
+      "cores": "2",
+      "price": 1244.76
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "200",
+      "ram": "12",
+      "cores": "4",
+      "price": 1494.45
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "200",
+      "ram": "12",
+      "cores": "6",
+      "price": 1992.6
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "250",
+      "ram": "3",
+      "cores": "2",
+      "price": 1008.6
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "250",
+      "ram": "3",
+      "cores": "4",
+      "price": 1353
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "250",
+      "ram": "3",
+      "cores": "6",
+      "price": 1795.8
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "250",
+      "ram": "6",
+      "cores": "2",
+      "price": 1125.45
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "250",
+      "ram": "6",
+      "cores": "4",
+      "price": 1494.45
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "250",
+      "ram": "6",
+      "cores": "6",
+      "price": 1992.6
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "250",
+      "ram": "12",
+      "cores": "2",
+      "price": 1383.75
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "250",
+      "ram": "12",
+      "cores": "4",
+      "price": 1660.5
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "250",
+      "ram": "12",
+      "cores": "6",
+      "price": 2214
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "300",
+      "ram": "3",
+      "cores": "2",
+      "price": 1119.3
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "300",
+      "ram": "3",
+      "cores": "4",
+      "price": 1494.45
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "300",
+      "ram": "3",
+      "cores": "6",
+      "price": 1992.6
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "300",
+      "ram": "6",
+      "cores": "2",
+      "price": 1248.45
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "300",
+      "ram": "6",
+      "cores": "4",
+      "price": 1660.5
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "300",
+      "ram": "6",
+      "cores": "6",
+      "price": 2214
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "300",
+      "ram": "12",
+      "cores": "2",
+      "price": 1537.5
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "300",
+      "ram": "12",
+      "cores": "4",
+      "price": 1845
+    },
+    {
+      "manufacturer": "DELL",
+      "storage": "300",
+      "ram": "12",
+      "cores": "6",
+      "price": 2460
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "200",
+      "ram": "3",
+      "cores": "2",
+      "price": 1201.464
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "200",
+      "ram": "3",
+      "cores": "4",
+      "price": 1607.364
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "200",
+      "ram": "3",
+      "cores": "6",
+      "price": 2135.034
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "200",
+      "ram": "6",
+      "cores": "2",
+      "price": 1339.47
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "200",
+      "ram": "6",
+      "cores": "4",
+      "price": 1777.842
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "200",
+      "ram": "6",
+      "cores": "6",
+      "price": 2370.456
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "200",
+      "ram": "12",
+      "cores": "2",
+      "price": 1643.0832
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "200",
+      "ram": "12",
+      "cores": "4",
+      "price": 1972.674
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "200",
+      "ram": "12",
+      "cores": "6",
+      "price": 2630.232
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "250",
+      "ram": "3",
+      "cores": "2",
+      "price": 1331.352
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "250",
+      "ram": "3",
+      "cores": "4",
+      "price": 1785.96
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "250",
+      "ram": "3",
+      "cores": "6",
+      "price": 2370.456
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "250",
+      "ram": "6",
+      "cores": "2",
+      "price": 1485.594
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "250",
+      "ram": "6",
+      "cores": "4",
+      "price": 1972.674
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "250",
+      "ram": "6",
+      "cores": "6",
+      "price": 2630.232
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "250",
+      "ram": "12",
+      "cores": "2",
+      "price": 1826.55
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "250",
+      "ram": "12",
+      "cores": "4",
+      "price": 2191.86
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "250",
+      "ram": "12",
+      "cores": "6",
+      "price": 2922.48
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "300",
+      "ram": "3",
+      "cores": "2",
+      "price": 1477.476
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "300",
+      "ram": "3",
+      "cores": "4",
+      "price": 1972.674
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "300",
+      "ram": "3",
+      "cores": "6",
+      "price": 2630.232
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "300",
+      "ram": "6",
+      "cores": "2",
+      "price": 1647.954
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "300",
+      "ram": "6",
+      "cores": "4",
+      "price": 2191.86
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "300",
+      "ram": "6",
+      "cores": "6",
+      "price": 2922.48
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "300",
+      "ram": "12",
+      "cores": "2",
+      "price": 2029.5
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "300",
+      "ram": "12",
+      "cores": "4",
+      "price": 2435.4
+    },
+    {
+      "manufacturer": "IBM",
+      "storage": "300",
+      "ram": "12",
+      "cores": "6",
+      "price": 3247.2
+    }
+  ],
+  "rent": [
+    {
+      "host": "ARUBA",
+      "storage": "200",
+      "ram": "3",
+      "cores": "2",
+      "price": 98.38
+    },
+    {
+      "host": "ARUBA",
+      "storage": "200",
+      "ram": "3",
+      "cores": "4",
+      "price": 148.45
+    },
+    {
+      "host": "ARUBA",
+      "storage": "200",
+      "ram": "3",
+      "cores": "6",
+      "price": 198.52
+    },
+    {
+      "host": "ARUBA",
+      "storage": "200",
+      "ram": "6",
+      "cores": "2",
+      "price": 111.56
+    },
+    {
+      "host": "ARUBA",
+      "storage": "200",
+      "ram": "6",
+      "cores": "4",
+      "price": 161.63
+    },
+    {
+      "host": "ARUBA",
+      "storage": "200",
+      "ram": "6",
+      "cores": "6",
+      "price": 211.69
+    },
+    {
+      "host": "ARUBA",
+      "storage": "200",
+      "ram": "12",
+      "cores": "2",
+      "price": 137.91
+    },
+    {
+      "host": "ARUBA",
+      "storage": "200",
+      "ram": "12",
+      "cores": "4",
+      "price": 187.98
+    },
+    {
+      "host": "ARUBA",
+      "storage": "200",
+      "ram": "12",
+      "cores": "6",
+      "price": 238.05
+    },
+    {
+      "host": "ARUBA",
+      "storage": "250",
+      "ram": "3",
+      "cores": "2",
+      "price": 107.16
+    },
+    {
+      "host": "ARUBA",
+      "storage": "250",
+      "ram": "3",
+      "cores": "4",
+      "price": 157.23
+    },
+    {
+      "host": "ARUBA",
+      "storage": "250",
+      "ram": "3",
+      "cores": "6",
+      "price": 207.3
+    },
+    {
+      "host": "ARUBA",
+      "storage": "250",
+      "ram": "6",
+      "cores": "2",
+      "price": 120.34
+    },
+    {
+      "host": "ARUBA",
+      "storage": "250",
+      "ram": "6",
+      "cores": "4",
+      "price": 170.41
+    },
+    {
+      "host": "ARUBA",
+      "storage": "250",
+      "ram": "6",
+      "cores": "6",
+      "price": 220.48
+    },
+    {
+      "host": "ARUBA",
+      "storage": "250",
+      "ram": "12",
+      "cores": "2",
+      "price": 149.69
+    },
+    {
+      "host": "ARUBA",
+      "storage": "250",
+      "ram": "12",
+      "cores": "4",
+      "price": 196.76
+    },
+    {
+      "host": "ARUBA",
+      "storage": "250",
+      "ram": "12",
+      "cores": "6",
+      "price": 246.83
+    },
+    {
+      "host": "ARUBA",
+      "storage": "300",
+      "ram": "3",
+      "cores": "2",
+      "price": 115.95
+    },
+    {
+      "host": "ARUBA",
+      "storage": "300",
+      "ram": "3",
+      "cores": "4",
+      "price": 166.02
+    },
+    {
+      "host": "ARUBA",
+      "storage": "300",
+      "ram": "3",
+      "cores": "6",
+      "price": 216.09
+    },
+    {
+      "host": "ARUBA",
+      "storage": "300",
+      "ram": "6",
+      "cores": "2",
+      "price": 129.12
+    },
+    {
+      "host": "ARUBA",
+      "storage": "300",
+      "ram": "6",
+      "cores": "4",
+      "price": 179.19
+    },
+    {
+      "host": "ARUBA",
+      "storage": "300",
+      "ram": "6",
+      "cores": "6",
+      "price": 229.26
+    },
+    {
+      "host": "ARUBA",
+      "storage": "300",
+      "ram": "12",
+      "cores": "2",
+      "price": 155.48
+    },
+    {
+      "host": "ARUBA",
+      "storage": "300",
+      "ram": "12",
+      "cores": "4",
+      "price": 205.55
+    },
+    {
+      "host": "ARUBA",
+      "storage": "300",
+      "ram": "12",
+      "cores": "6",
+      "price": 255.61
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "200",
+      "ram": "3",
+      "cores": "2",
+      "price": 9.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "200",
+      "ram": "3",
+      "cores": "4",
+      "price": 14.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "200",
+      "ram": "3",
+      "cores": "6",
+      "price": 19.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "200",
+      "ram": "6",
+      "cores": "2",
+      "price": 11.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "200",
+      "ram": "6",
+      "cores": "4",
+      "price": 16.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "200",
+      "ram": "6",
+      "cores": "6",
+      "price": 22.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "200",
+      "ram": "12",
+      "cores": "2",
+      "price": 13.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "200",
+      "ram": "12",
+      "cores": "4",
+      "price": 19.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "200",
+      "ram": "12",
+      "cores": "6",
+      "price": 29.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "250",
+      "ram": "3",
+      "cores": "2",
+      "price": 11.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "250",
+      "ram": "3",
+      "cores": "4",
+      "price": 16.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "250",
+      "ram": "3",
+      "cores": "6",
+      "price": 22.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "250",
+      "ram": "6",
+      "cores": "2",
+      "price": 14.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "250",
+      "ram": "6",
+      "cores": "4",
+      "price": 19.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "250",
+      "ram": "6",
+      "cores": "6",
+      "price": 25.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "250",
+      "ram": "12",
+      "cores": "2",
+      "price": 16.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "250",
+      "ram": "12",
+      "cores": "4",
+      "price": 22.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "250",
+      "ram": "12",
+      "cores": "6",
+      "price": 28.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "300",
+      "ram": "3",
+      "cores": "2",
+      "price": 14.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "300",
+      "ram": "3",
+      "cores": "4",
+      "price": 22.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "300",
+      "ram": "3",
+      "cores": "6",
+      "price": 29.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "300",
+      "ram": "6",
+      "cores": "2",
+      "price": 19.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "300",
+      "ram": "6",
+      "cores": "4",
+      "price": 29.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "300",
+      "ram": "6",
+      "cores": "6",
+      "price": 49.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "300",
+      "ram": "12",
+      "cores": "2",
+      "price": 29.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "300",
+      "ram": "12",
+      "cores": "4",
+      "price": 49.99
+    },
+    {
+      "host": "HOSTINGER",
+      "storage": "300",
+      "ram": "12",
+      "cores": "6",
+      "price": 69.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "200",
+      "ram": "3",
+      "cores": "2",
+      "price": 24.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "200",
+      "ram": "3",
+      "cores": "4",
+      "price": 29.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "200",
+      "ram": "3",
+      "cores": "6",
+      "price": 34.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "200",
+      "ram": "6",
+      "cores": "2",
+      "price": 32.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "200",
+      "ram": "6",
+      "cores": "4",
+      "price": 36.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "200",
+      "ram": "6",
+      "cores": "6",
+      "price": 41.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "200",
+      "ram": "12",
+      "cores": "2",
+      "price": 39.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "200",
+      "ram": "12",
+      "cores": "4",
+      "price": 46.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "200",
+      "ram": "12",
+      "cores": "6",
+      "price": 54.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "250",
+      "ram": "3",
+      "cores": "2",
+      "price": 41.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "250",
+      "ram": "3",
+      "cores": "4",
+      "price": 47.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "250",
+      "ram": "3",
+      "cores": "6",
+      "price": 54.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "250",
+      "ram": "6",
+      "cores": "2",
+      "price": 47.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "250",
+      "ram": "6",
+      "cores": "4",
+      "price": 54.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "250",
+      "ram": "6",
+      "cores": "6",
+      "price": 69.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "250",
+      "ram": "12",
+      "cores": "2",
+      "price": 59.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "250",
+      "ram": "12",
+      "cores": "4",
+      "price": 74.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "250",
+      "ram": "12",
+      "cores": "6",
+      "price": 99.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "300",
+      "ram": "3",
+      "cores": "2",
+      "price": 69.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "300",
+      "ram": "3",
+      "cores": "4",
+      "price": 89.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "300",
+      "ram": "3",
+      "cores": "6",
+      "price": 114.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "300",
+      "ram": "6",
+      "cores": "2",
+      "price": 79.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "300",
+      "ram": "6",
+      "cores": "4",
+      "price": 99.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "300",
+      "ram": "6",
+      "cores": "6",
+      "price": 139.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "300",
+      "ram": "12",
+      "cores": "2",
+      "price": 99.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "300",
+      "ram": "12",
+      "cores": "4",
+      "price": 119.99
+    },
+    {
+      "host": "CLOUDWAYS",
+      "storage": "300",
+      "ram": "12",
+      "cores": "6",
+      "price": 160.99
+    }
+  ]
+}

@@ -1,19 +1,20 @@
 {
-  "name": "economy-project",
-  "productName": "economy-project",
+  "name": "server-side",
+  "productName": "server-side",
   "version": "1.0.0",
-  "description": "Economy Project",
+  "description": "Server side help choosing your server",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "lint": "echo \"No linting configured\"",
+    "rebuild-deps": "electron-builder install-app-deps"
   },
   "keywords": [],
   "author": {
-    "name": "LoreSchaeffer",
+    "name": "Lorenzo, Martina, Luca, Stefano",
     "email": "lm.lorenzo@outlook.it"
   },
   "license": "MIT",
@@ -45,7 +46,12 @@
     }
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-forge": "^5.2.4",
+    "electron-squirrel-startup": "^1.0.0",
+    "is-docker": "^3.0.0",
+    "jquery": "^3.6.0",
+    "nugget": "^2.0.1",
+    "yarn-or-npm": "^3.0.1"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.61",
