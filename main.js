@@ -3,7 +3,7 @@ const path = require('path');
 const ipc = ipcMain;
 const fs = require('fs');
 
-const DEV_TOOLS = true;
+const DEV_TOOLS = false;
 const FRAME = true;
 const RESIZABLE = true;
 const WIDTH = 900;

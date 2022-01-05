@@ -162,28 +162,18 @@ const optionHTML = `<div class="btn-group" role="group" aria-label="Type selecto
             </div>
         </div>
     </div>
-    
-    <div class="row">
-        <div class="col-5">
-            <label for="bDepreciation-{id}" class="form-label">Ammortamento</label>
-        </div>
-        <div class="col-7">
-            <select id="bDepreciation-{id}" class="form-select form-select-sm" aria-label="Depreciation">
-                <option value="it">Italiano</option>
-                <option value="fr">Francese</option>
-                <option value="de">Tedesco</option>
-                <option value="us">Americano</option>
-            </select>
-        </div>
-    </div>
 </form>`;
 
 const newOption = $('#newOption');
 const chartCanvas = $('#chart');
 const optionsContainer = $('#optionsContainer');
+const periodRange = $('#period');
+const periodOutput = $('#periodOutput');
 const chartCtx = chartCanvas[0].getContext('2d');
 
 const colors = ['#ffeb3b', '#0f9d58', '#dc3545', '#4285f4'];
+const backgroundColors = ['rgba(255, 235, 59, 0.2)', 'rgba(15, 157, 88, 0.2)', 'rgba(220, 53, 69, 0.2)', 'rgba(66, 133, 244, 0.2)'];
+let period = periodOutput.val() * 12;
 let options = [];
 let datasets = {};
 let lastId = 0;
@@ -191,6 +181,19 @@ let chart;
 
 $(window).ready(() => {
     createDefOption();
+
+    periodOutput.text(periodRange.val());
+    period = parseInt(periodRange.val()) * 12;
+});
+
+periodRange.on('input', () => {
+    periodOutput.text(periodRange.val());
+    period = parseInt(periodRange.val()) * 12;
+
+    for (let i = 0; i < options.length; i++) {
+        const option = options[i];
+        updateChart(option, option);
+    }
 });
 
 newOption.click(() => {
@@ -234,7 +237,6 @@ function createOption(id, server) {
     const bInstallment = $('#bInstallment-' + id);
     const bInstallmentBlock = $('#installmentBlock-' + id);
     const bInstallmentMonths = $('#bInstallmentMonths-' + id);
-    const bDepreciation = $('#bDepreciation-' + id);
 
     rHost.forEach((host) => {
         hostSelector.append(`<option value="${host}">${host}</option>`);
@@ -360,10 +362,6 @@ function createOption(id, server) {
         updatePrice(id)
         updateChart(id, name);
     });
-    bDepreciation.on('change', () => {
-        updatePrice(id)
-        updateChart(id, name);
-    });
 
     if (server != null) {
         if (server.rent) {
@@ -438,44 +436,31 @@ function updateChart(id, name) {
     const data = [];
 
     if (rent) {
-        for (let month = 1; month <= 24; month++) {
+        for (let month = 1; month <= period; month++) {
             data.push(price * month);
         }
     } else {
         const bHousing = parseFloat($('#bHousing-' + id).val());
         const bEnergy = parseFloat($('#bEnergy-' + id).val());
-        const bDepreciation = $('#bDepreciation-' + id).val();
         const bInstallment = $('#bInstallment-' + id).is(':checked');
         const bInstallmentMonths = parseInt($('#bInstallmentMonths-' + id).val());
-        const bInterests = parseFloat($('#bInterests-' + id).val());
+        const bInterests = parseFloat($('#bInterests-' + id).val()) / 100;
 
         if (bInstallment) {
             const monthlyPrice = price / bInstallmentMonths;
             const installment = (price * bInterests * bInstallmentMonths / 12) / bInstallmentMonths;
 
-            for (let month = 1; month <= 24; month++) {
-                data.push((month > bInstallmentMonths ? price + (installment * bInstallmentMonths) : (monthlyPrice + installment) * month) + (bHousing + bEnergy) * month);
+            for (let month = 1; month <= period; month++) {
+                data.push((month < bInstallmentMonths ? (monthlyPrice + installment) * month : (price + installment * bInstallmentMonths)) + (bHousing + bEnergy) * month);
             }
         } else {
-            for (let month = 1; month <= 24; month++) {
-                let depreciation = 0;
-
-                if (bDepreciation === 'it') {
-
-                } else if (bDepreciation === 'fr') {
-
-                } else if (bDepreciation === 'de') {
-
-                } else if (bDepreciation === 'us') {
-
-                }
-
+            for (let month = 1; month <= period; month++) {
                 data.push(price + bHousing * month + bEnergy * month);
             }
         }
     }
 
-    const dataset = getDataset(id, 'Opzione ' + name, colors[options.length - 1], data);
+    const dataset = getDataset(id, 'Opzione ' + name, colors[options.length - 1], backgroundColors[options.length - 1], data);
     datasets[id] = dataset;
     if (!createChart(getChartConfig(getChartData(dataset)))) {
         updateData(dataset);
@@ -537,7 +522,7 @@ function getChartData(datasets) {
     if (!Array.isArray(datasets)) datasets = [datasets];
 
     return {
-        labels: getLabels(24),
+        labels: getLabels(period),
         datasets: datasets
     }
 }
@@ -555,13 +540,14 @@ function getLabels(size) {
     return labels;
 }
 
-function getDataset(id, label, color, data) {
+function getDataset(id, label, color, backgroundColor, data) {
     return {
         id: id,
         label: label,
         data: data,
         borderColor: color,
-        backgroundColor: color
+        backgroundColor: backgroundColor,
+        fill: false
     }
 }
 

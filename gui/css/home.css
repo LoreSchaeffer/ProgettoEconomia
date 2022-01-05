@@ -28,12 +28,12 @@
 
 #optionsContainer {
     margin-top: 0.5em;
-    height: 60vh;
+    height: 58vh;
     border-bottom: 1px solid var(--gray-dark);
 }
 
 #chartContainer {
-    height: 40vh;
+    height: 37vh;
 }
 
 #chartContainer canvas {
@@ -110,4 +110,9 @@
 .remove-option:active i {
     color: var(--red);
     transition: all 300ms;
+}
+
+#periodSelector {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
 }
