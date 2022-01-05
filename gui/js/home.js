@@ -33,91 +33,147 @@ data.rent.forEach((item) => {
 });
 
 const optionHTML = `<div class="btn-group" role="group" aria-label="Type selector">
-    <button id="rentSelector-{id}" type="button" class="btn btn-primary type-selector">Rent</button>
-    <button id="buySelector-{id}" type="button" class="btn btn-primary type-selector">Buy</button>
+    <button id="rentSelector-{id}" type="button" class="btn btn-primary btn-sm type-selector">Noleggia</button>
+    <button id="buySelector-{id}" type="button" class="btn btn-primary btn-sm type-selector">Acquista</button>
 </div>
 <form id="rentForm-{id}" class="server-form">
     <div class="row">
-        <div class="col-4">
+        <div class="col-5">
             <label for="hostSelector-{id}" class="form-label">Host</label>
         </div>
-        <div class="col-8">
+        <div class="col-7">
             <select id="hostSelector-{id}" class="form-select form-select-sm" aria-label="Host"></select>
         </div>
     </div>
     <div class="row">
-        <div class="col-4">
+        <div class="col-5">
             <label for="rStorageSelector-{id}" class="form-label">Storage</label>
         </div>
-        <div class="col-8">
+        <div class="col-7">
             <select id="rStorageSelector-{id}" class="form-select form-select-sm" aria-label="Storage"></select>
         </div>
     </div>
     <div class="row">
-        <div class="col-4">
+        <div class="col-5">
             <label for="rRamSelector-{id}" class="form-label">RAM</label>
         </div>
-        <div class="col-8">
+        <div class="col-7">
             <select id="rRamSelector-{id}" class="form-select form-select-sm" aria-label="Ram"></select>
         </div>
     </div>
     <div class="row">
-        <div class="col-4">
+        <div class="col-5">
             <label for="rCoresSelector-{id}" class="form-label">CPU Cores</label>
         </div>
-        <div class="col-8">
+        <div class="col-7">
             <select id="rCoresSelector-{id}" class="form-select form-select-sm" aria-label="Cores"></select>
         </div>
     </div>
     <div class="row">
-        <div class="col-4">
-            <label for="rPrice-{id}" class="form-label">Monthly Price</label>
+        <div class="col-5">
+            <label for="rPrice-{id}" class="form-label">Prezzo mensile</label>
         </div>
-        <div class="col-8">
-            <input id="rPrice-{id}" type="text" class="form-control form-control-sm" aria-label="Monthly Price" readonly/>
+        <div class="col-7">
+            <input id="rPrice-{id}" type="text" class="form-control form-control-sm" aria-label="Monthly Price"
+                   readonly/>
         </div>
     </div>
 </form>
 
 <form id="buyForm-{id}" class="server-form">
     <div class="row">
-        <div class="col-4">
-            <label for="manufacturerSelector-{id}" class="form-label">Manufacturer</label>
+        <div class="col-5">
+            <label for="manufacturerSelector-{id}" class="form-label">Produttore</label>
         </div>
-        <div class="col-8">
-            <select id="manufacturerSelector-{id}" class="form-select form-select-sm" aria-label="Manufacturer"></select>
+        <div class="col-7">
+            <select id="manufacturerSelector-{id}" class="form-select form-select-sm"
+                    aria-label="Manufacturer"></select>
         </div>
     </div>
     <div class="row">
-        <div class="col-4">
+        <div class="col-5">
             <label for="bStorageSelector-{id}" class="form-label">Storage</label>
         </div>
-        <div class="col-8">
+        <div class="col-7">
             <select id="bStorageSelector-{id}" class="form-select form-select-sm" aria-label="Storage"></select>
         </div>
     </div>
     <div class="row">
-        <div class="col-4">
+        <div class="col-5">
             <label for="bRamSelector-{id}" class="form-label">RAM</label>
         </div>
-        <div class="col-8">
+        <div class="col-7">
             <select id="bRamSelector-{id}" class="form-select form-select-sm" aria-label="Ram"></select>
         </div>
     </div>
     <div class="row">
-        <div class="col-4">
+        <div class="col-5">
             <label for="bCoresSelector-{id}" class="form-label">CPU Cores</label>
         </div>
-        <div class="col-8">
+        <div class="col-7">
             <select id="bCoresSelector-{id}" class="form-select form-select-sm" aria-label="Cores"></select>
         </div>
     </div>
     <div class="row">
-        <div class="col-4">
-            <label for="bPrice-{id}" class="form-label">Price</label>
+        <div class="col-5">
+            <label for="bPrice-{id}" class="form-label">Prezzo</label>
         </div>
-        <div class="col-8">
-            <input id="bPrice-{id}" type="text" class="form-control form-control-sm" aria-label="Price" readonly/>
+        <div class="col-7">
+            <input id="bPrice-{id}" type="text" class="form-control form-control-sm" readonly/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <label for="bHousing-{id}" class="form-label">Housing <small>&euro; / mese</small></label>
+        </div>
+        <div class="col-7">
+            <input id="bHousing-{id}" type="number" class="form-control form-control-sm" aria-label="Hosuing Cost"
+                   min="0" step="0.01" value="0"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <label for="bEnergy-{id}" class="form-label">Energia <small>&euro; / mese</small></label>
+        </div>
+        <div class="col-7">
+            <input id="bEnergy-{id}" type="number" class="form-control form-control-sm" min="0" step="0.01" value="0"/>
+        </div>
+    </div>
+    
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="bInstallment-{id}">
+        <label class="form-check-label" for="bInstallment-{id}">Rateizzazione</label>
+    </div>
+    <div id="installmentBlock-{id}" class="installment-block">
+        <div class="row">
+            <div class="col-5">
+                <label for="bInstallmentMonths-{id}" class="form-label"># Rate <small>mesi</small></label>
+            </div>
+            <div class="col-7">
+                <input id="bInstallmentMonths-{id}" type="number" class="form-control form-control-sm" min="0" step="12" value="12"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <label for="bInterests-{id}" class="form-label">Interessi <small>%</small></label>
+            </div>
+            <div class="col-7">
+                <input id="bInterests-{id}" type="number" class="form-control form-control-sm" min="0" max="100" step="0.1" value="0"/>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-5">
+            <label for="bDepreciation-{id}" class="form-label">Ammortamento</label>
+        </div>
+        <div class="col-7">
+            <select id="bDepreciation-{id}" class="form-select form-select-sm" aria-label="Depreciation">
+                <option value="it">Italiano</option>
+                <option value="fr">Francese</option>
+                <option value="de">Tedesco</option>
+                <option value="us">Americano</option>
+            </select>
         </div>
     </div>
 </form>`;
@@ -129,7 +185,7 @@ const chartCtx = chartCanvas[0].getContext('2d');
 
 const colors = ['#ffeb3b', '#0f9d58', '#dc3545', '#4285f4'];
 let options = [];
-let datasets = [];
+let datasets = {};
 let lastId = 0;
 let chart;
 
@@ -152,7 +208,7 @@ function createOption(id, server) {
 
     let html = `<div id="option-${id}" class="option col-${getOptionsSize()}">`;
     html += `<a id="removeOption-${id}" class="remove-option" data-id="${id}"><i class="fas fa-times"></i></a>`;
-    html += `<h4>Option ${name}</h4>`;
+    html += `<h4>Opzione ${name}</h4>`;
     html += optionHTML.replace(/\{id\}/g, id);
     html += '</div>';
 
@@ -173,6 +229,12 @@ function createOption(id, server) {
     const bRamSelector = $('#bRamSelector-' + id);
     const bCoresSelector = $('#bCoresSelector-' + id);
     const bPrice = $('#bPrice-' + id);
+    const bHousing = $('#bHousing-' + id);
+    const bEnergy = $('#bEnergy-' + id);
+    const bInstallment = $('#bInstallment-' + id);
+    const bInstallmentBlock = $('#installmentBlock-' + id);
+    const bInstallmentMonths = $('#bInstallmentMonths-' + id);
+    const bDepreciation = $('#bDepreciation-' + id);
 
     rHost.forEach((host) => {
         hostSelector.append(`<option value="${host}">${host}</option>`);
@@ -209,6 +271,11 @@ function createOption(id, server) {
 
         resizeOptions();
         renameOptions();
+
+        if (datasets[currentId]) {
+            delete datasets[currentId];
+            removeData(datasets[currentId]);
+        }
 
         if (options.length < 4) newOption.attr('disabled', false);
     });
@@ -267,6 +334,33 @@ function createOption(id, server) {
         updateChart(id, name);
     });
     bCoresSelector.on('change', () => {
+        updatePrice(id)
+        updateChart(id, name);
+    });
+    bHousing.on('change', () => {
+        updatePrice(id)
+        updateChart(id, name);
+    });
+    bEnergy.on('change', () => {
+        updatePrice(id)
+        updateChart(id, name);
+    });
+    bInstallment.on('change', () => {
+        if (bInstallment.is(':checked')) bInstallmentBlock.css('display', 'block');
+        else bInstallmentBlock.css('display', 'none');
+
+        updatePrice(id)
+        updateChart(id, name);
+    });
+    bInstallmentMonths.on('change', () => {
+        updatePrice(id)
+        updateChart(id, name);
+    });
+    bInstallmentBlock.on('change', () => {
+        updatePrice(id)
+        updateChart(id, name);
+    });
+    bDepreciation.on('change', () => {
         updatePrice(id)
         updateChart(id, name);
     });
@@ -340,19 +434,49 @@ function updatePrice(id) {
 
 function updateChart(id, name) {
     const rent = $('#rentSelector-' + id).hasClass('active');
-    const price = rent ? $('#rPrice-' + id).val() : $('#bPrice-' + id).val();
+    const price = parseFloat(rent ? $('#rPrice-' + id).val() : $('#bPrice-' + id).val());
     const data = [];
 
     if (rent) {
         for (let month = 1; month <= 24; month++) {
-            data.push(parseFloat(price) * month);
+            data.push(price * month);
         }
     } else {
-        return;
+        const bHousing = parseFloat($('#bHousing-' + id).val());
+        const bEnergy = parseFloat($('#bEnergy-' + id).val());
+        const bDepreciation = $('#bDepreciation-' + id).val();
+        const bInstallment = $('#bInstallment-' + id).is(':checked');
+        const bInstallmentMonths = parseInt($('#bInstallmentMonths-' + id).val());
+        const bInterests = parseFloat($('#bInterests-' + id).val());
+
+        if (bInstallment) {
+            const monthlyPrice = price / bInstallmentMonths;
+            const installment = (price * bInterests * bInstallmentMonths / 12) / bInstallmentMonths;
+
+            for (let month = 1; month <= 24; month++) {
+                data.push((month > bInstallmentMonths ? price + (installment * bInstallmentMonths) : (monthlyPrice + installment) * month) + (bHousing + bEnergy) * month);
+            }
+        } else {
+            for (let month = 1; month <= 24; month++) {
+                let depreciation = 0;
+
+                if (bDepreciation === 'it') {
+
+                } else if (bDepreciation === 'fr') {
+
+                } else if (bDepreciation === 'de') {
+
+                } else if (bDepreciation === 'us') {
+
+                }
+
+                data.push(price + bHousing * month + bEnergy * month);
+            }
+        }
     }
 
-    const dataset = getDataset(id, 'Option ' + name, colors[id], data);
-    datasets.push(dataset);
+    const dataset = getDataset(id, 'Opzione ' + name, colors[options.length - 1], data);
+    datasets[id] = dataset;
     if (!createChart(getChartConfig(getChartData(dataset)))) {
         updateData(dataset);
     }
@@ -372,7 +496,6 @@ function resizeOptions() {
 function renameOptions() {
     let index = 0;
     options.forEach((id) => {
-        console.log('Renaming option ' + id + ' to ' + (index + 1));
         $('#option-' + id).find('h4').text('Option ' + ++index);
     });
 }
@@ -425,9 +548,8 @@ function getLabels(size) {
     let labels = [];
 
     for (let i = 0; i < size; i++) {
-        let newDate = date;
-        newDate = new Date(newDate.setMonth(newDate.getMonth() + i));
-        labels.push(newDate.toLocaleString('en-us', {month: 'long'}) + ' ' + newDate.getFullYear());
+        if (i > 0) date = new Date(date.setMonth(date.getMonth() + 1));
+        labels.push(date.toLocaleString('en-us', {month: 'long'}) + ' ' + date.getFullYear());
     }
 
     return labels;

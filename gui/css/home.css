@@ -7,7 +7,7 @@
     border-radius: 50%;
     width: 45px;
     height: 45px;
-    background-color: var(--orange);
+    background-color: var(--dark-blue);
     padding: 0;
     display: flex;
     justify-content: center;
@@ -15,11 +15,11 @@
 }
 
 #newOption:hover {
-    background-color: #F57C00;
+    background-color: var(--indigo);
 }
 
 #newOption:active {
-    background-color: #EF6C00;
+    background-color: var(--darker-blue);
 }
 
 #newOption i {
@@ -42,6 +42,9 @@
 
 .option {
     border-right: 1px solid var(--gray-dark);
+    padding-bottom: 0.5em;
+    height: 100%;
+    overflow-y: auto;
 }
 
 .type-selector, #buySelector {
@@ -51,14 +54,14 @@
 }
 
 .type-selector:hover, #buySelector:hover {
-    background-color: var(--d-orange);
-    border: 1px solid var(--orange);
+    background-color: var(--d-blue);
+    border: 1px solid var(--dark-blue);
     transition: all 300ms;
 }
 
 .type-selector.active, #buySelector.active {
-    background-color: var(--orange);
-    border: 1px solid var(--orange);
+    background-color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
 }
 
 .server-form {
@@ -70,7 +73,20 @@
 }
 
 .server-form .row {
-    margin-top: 0.5em;
+    margin-top: 0.2em;
+}
+
+.form-label {
+    line-height: 95%;
+}
+
+.form-label small {
+    font-size: 70%;
+    color: var(--light-gray);
+}
+
+.installment-block {
+    display: none;
 }
 
 .remove-option {

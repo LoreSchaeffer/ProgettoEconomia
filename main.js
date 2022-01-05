@@ -7,7 +7,7 @@ const DEV_TOOLS = true;
 const FRAME = true;
 const RESIZABLE = true;
 const WIDTH = 900;
-const HEIGHT = 700;
+const HEIGHT = 750;
 const root = path.join(__dirname, 'gui');
 const dataPath = 'data.json';
 let data;

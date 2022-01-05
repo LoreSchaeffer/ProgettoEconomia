@@ -1,4 +1,5 @@
 :root {
+    --darker-blue: #08306D;
     --dark-blue: #0D47A1;
     --blue: #4285F4;
     --indigo: #283593;
@@ -62,23 +63,20 @@ input[type='radio']:active {
     box-shadow: none !important;
 }
 
-.bootstrap-select .btn {
-    background-color: var(--almost-black) !important;
-    border-color: var(--gray-dark) !important;
+::-webkit-scrollbar {
+    width: 0.5vw;
+    min-width: 8px;
 }
 
-.bootstrap-select .dropdown-menu,
-.bootstrap-select .dropdown-menu .dropdown-item,
-.bootstrap-select .dropdown-menu .dropdown-item span {
-    background-color: var(--gray-dark);
+::-webkit-scrollbar-track {
+    background: var(--almost-black);
 }
 
-.bootstrap-select .dropdown-menu .selected,
-.bootstrap-select .dropdown-menu .selected span {
-    background-color: var(--primary);
+::-webkit-scrollbar-thumb {
+    background: #aaaaaa;
+    border-radius: 20px;
 }
 
-.bootstrap-select .dropdown-menu .dropdown-item:hover,
-.bootstrap-select .dropdown-menu .dropdown-item:hover span {
-    background-color: var(--blue);
+::-webkit-scrollbar-thumb:hover {
+    background: #717171;
 }
