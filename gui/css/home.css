@@ -28,12 +28,12 @@
 
 #optionsContainer {
     margin-top: 0.5em;
-    height: 58vh;
+    height: 50vh;
     border-bottom: 1px solid var(--gray-dark);
 }
 
 #chartContainer {
-    height: 37vh;
+    height: 35vh;
 }
 
 #chartContainer canvas {
@@ -115,4 +115,9 @@
 #periodSelector {
     margin-top: 0.2em;
     margin-bottom: 0.2em;
+}
+
+#convenience {
+    font-size: 85%;
+    color: var(--light-gray);
 }

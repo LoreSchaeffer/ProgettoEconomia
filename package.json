@@ -17,32 +17,11 @@
     "name": "Lorenzo, Martina, Luca, Stefano",
     "email": "lm.lorenzo@outlook.it"
   },
-  "license": "MIT",
+  "license": "All Rights Reserved",
   "config": {
     "forge": {
       "packagerConfig": {},
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "economy_project"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
-        }
-      ]
+      "makers": []
     }
   },
   "dependencies": {
@@ -60,5 +39,32 @@
     "@electron-forge/maker-squirrel": "^6.0.0-beta.61",
     "@electron-forge/maker-zip": "^6.0.0-beta.61",
     "electron": "16.0.5"
+  },
+  "build": {
+    "productName": "Server Side",
+    "appId": "it.multicoredev.ServerSide",
+    "win": {
+      "target": [
+        "portable"
+      ]
+    },
+    "portable": {
+      "artifactName": "ServerSide.exe",
+      "unpackDirName": "./serverside"
+    },
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "**/*",
+      "data.json",
+      "main.js",
+      "src/*",
+      "src/css/*",
+      "src/images/*",
+      "src/js/*",
+      "src/libs/*",
+      "src/locales/*"
+    ]
   }
 }

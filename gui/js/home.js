@@ -168,6 +168,7 @@ const newOption = $('#newOption');
 const chartCanvas = $('#chart');
 const optionsContainer = $('#optionsContainer');
 const periodRange = $('#period');
+const convenience = $('#convenience');
 const periodOutput = $('#periodOutput');
 const chartCtx = chartCanvas[0].getContext('2d');
 
@@ -192,7 +193,8 @@ periodRange.on('input', () => {
 
     for (let i = 0; i < options.length; i++) {
         const option = options[i];
-        updateChart(option, option);
+
+        updateChart(option, $('#option-' + option).attr('data-name'));
     }
 });
 
@@ -209,7 +211,7 @@ function createOption(id, server) {
     options.push(id);
     const name = options.length;
 
-    let html = `<div id="option-${id}" class="option col-${getOptionsSize()}">`;
+    let html = `<div id="option-${id}" class="option col-${getOptionsSize()}" data-name="${name}">`;
     html += `<a id="removeOption-${id}" class="remove-option" data-id="${id}"><i class="fas fa-times"></i></a>`;
     html += `<h4>Opzione ${name}</h4>`;
     html += optionHTML.replace(/\{id\}/g, id);
@@ -428,11 +430,12 @@ function updatePrice(id) {
     }
 
     priceField.val(formatter.format(price));
+    priceField.attr('data-value', price);
 }
 
 function updateChart(id, name) {
     const rent = $('#rentSelector-' + id).hasClass('active');
-    const price = parseFloat(rent ? $('#rPrice-' + id).val() : $('#bPrice-' + id).val());
+    const price = parseFloat(rent ? $('#rPrice-' + id).attr('data-value') : $('#bPrice-' + id).attr('data-value'));
     const data = [];
 
     if (rent) {
@@ -465,6 +468,80 @@ function updateChart(id, name) {
     if (!createChart(getChartConfig(getChartData(dataset)))) {
         updateData(dataset);
     }
+
+    updateConvenience();
+}
+
+function updateConvenience() {
+    if (Object.keys(datasets).length <= 1) {
+        convenience.text('');
+        return;
+    }
+
+    let convenientOptions = {};
+
+    for (let i = 0; i < period; i++) {
+        let value = null;
+        let convenientId = null;
+
+        Object.keys(datasets).forEach((key) => {
+            if (convenientId == null) {
+                value = datasets[key].data[i];
+                convenientId = datasets[key].label;
+            } else if (datasets[key].data[i] < value) {
+                value = datasets[key].data[i];
+                convenientId = datasets[key].label;
+            }
+        });
+
+        convenientOptions[i] = convenientId;
+    }
+
+
+    const fConvenientOptions = {};
+    let size = 0;
+
+    Object.keys(convenientOptions).forEach((key) => {
+        if (size === 0) {
+            fConvenientOptions[convenientOptions[key]] = key;
+            size++;
+        } else {
+            if (Object.keys(fConvenientOptions)[size - 1] === convenientOptions[key]) {
+                fConvenientOptions[convenientOptions[key]] = key;
+            } else {
+                fConvenientOptions[convenientOptions[key]] = key;
+                size++;
+            }
+        }
+    });
+
+
+    console.log(fConvenientOptions);
+
+    let text = '';
+
+    if (size === 1) {
+        text = 'La migliore opzione è l\'' + Object.keys(fConvenientOptions)[0].toLowerCase() + ' per tutto il periodo selezionato';
+    } else {
+        const labels = getLabels(period);
+        let idx = 0;
+
+        Object.keys(fConvenientOptions).forEach((key) => {
+            if (idx === 0) {
+                text = 'La migliore opzione è l\'' + key.toLowerCase() + ' fino al mese ' + labels[fConvenientOptions[key]];
+            } else {
+                if (idx === size - 1) {
+                    text += ', l\'' + key.toLowerCase() + ' a seguire.';
+                } else {
+                    text += ', l\'' + key.toLowerCase() + ' fino al mese ' + labels[fConvenientOptions[key]];
+                }
+            }
+
+            idx++;
+        });
+    }
+
+    convenience.text(text);
 }
 
 function createDefOption() {
@@ -534,7 +611,7 @@ function getLabels(size) {
 
     for (let i = 0; i < size; i++) {
         if (i > 0) date = new Date(date.setMonth(date.getMonth() + 1));
-        labels.push(date.toLocaleString('en-us', {month: 'long'}) + ' ' + date.getFullYear());
+        labels.push(date.toLocaleString('it-it', {month: 'long'}) + ' ' + date.getFullYear());
     }
 
     return labels;
@@ -562,6 +639,8 @@ function updateData(data) {
     } else {
         chart.data.datasets.push(data);
     }
+
+    chart.data.labels = getLabels(period);
 
     chart.update();
 }
